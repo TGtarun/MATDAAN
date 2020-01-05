@@ -35,7 +35,6 @@
 		<input type="submit" name="go">
 	</form>
 </div>
-	
 	<div class="div7">
 	<a href="admin3.php">Verify Candidate</a><br>
 	<a href="admin10.php">Verify Election Request</a><br>
