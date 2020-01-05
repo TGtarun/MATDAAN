@@ -1,0 +1,50 @@
+create database sslproject;
+
+use sslproject;
+
+select now();
+
+SELECT @@session.time_zone;
+
+  
+
+ create table voter(
+    -> name varchar(128),
+    -> mobile varchar(128),
+    -> sex varchar(128),
+    -> age varchar(128),
+    -> address varchar(128),
+    -> adhaar varchar(128),
+    -> userid varchar(128),
+    -> pass varchar(128))ENGINE MYISAM;
+
+create table candidate(
+    -> name varchar(128),
+    -> age varchar(128),
+    -> sex varchar(128),
+    -> mobile varchar(128),
+    -> address varchar(128),
+    -> adhaar varchar(128),
+    -> slogan varchar(128),
+    -> requestNo varchar(128),
+    -> userID varchar(128),
+    -> password varchar(128),
+    -> contestElection varchar(128),
+    -> verified boolean default false,
+    -> votes smallint default 0)ENGINE MYISAM;
+
+create table election(name varchar(128),start DATETIME,end DATETIME) ENGINE MYISAM;
+
+create table request(candidateID varchar(128),comment varchar(128)) ENGINE MYISAM;
+
+create table voterlist(username varchar(128),elecname varchar(128), flag boolean) ENGINE MYISAM;
+
+create table requestElection(userid varchar(128),contestElection varchar(128), comment varchar(128)) ENGINE MYISAM;
+
+create table feedback(name varchar(128),email varchar(128), message varchar(128)) ENGINE MYISAM;
+
+
+
+
+
+
