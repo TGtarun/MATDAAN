@@ -6,6 +6,7 @@
 </head>
 <body class="body1">
 	<div id="main">
+		
 		<nav>
 		<img src="./images/my.png" height="50" width="150">
 			<ul>
