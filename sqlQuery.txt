@@ -4,7 +4,7 @@ use sslproject;
 
 select now();
 
-SELECT @@session.time_zone;
+SELECT @@session.time_zone; //gives your system time
 
   
 
